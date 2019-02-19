@@ -21,4 +21,12 @@ for(let currentCan of this.stock){
 return litre_count;
 };
 
+Decorator.prototype.enough_paint_for_room = function(room) {
+  if (room.area >= this.stock_count()) {
+    return false
+  } else {
+    return true
+  }
+};
+
 module.exports = Decorator;

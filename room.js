@@ -9,6 +9,6 @@ this.painted = painted;
 };
 
 Room.prototype.paint_room = function(){
-  this.painted
+  this.painted = true;
 };
 module.exports = Room;

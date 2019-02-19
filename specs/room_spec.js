@@ -23,5 +23,10 @@ describe('Room', function(){ //bundle tests together 1st arg = label, 2nd arg an
    const expected = false;
    assert.strictEqual(actual,expected);
  });//again tests are given labels to be perceived by mocha
-
+ it('should be able to be painted', function(){
+   room.paint_room();
+   const actual = room.painted;
+   const expected = true;
+   assert.strictEqual(actual,expected);
+ });//again tests are given labels to be perceived by mocha
 });

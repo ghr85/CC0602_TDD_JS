@@ -47,4 +47,15 @@ describe('Decorator', function(){ //bundle tests together 1st arg = label, 2nd a
 
    assert.strictEqual(actual,expected);
  });
+
+ it('should be able to paint room if paint in stock',function(){
+   decorator.get_paint(paint_can);
+   decorator.get_paint(paint_can);
+   let room = new Room(5, false);
+   decorator.paint_room(room);
+   const actual = room.painted;
+   const expected = true;
+
+   assert.strictEqual(actual,expected);
+ });
 });

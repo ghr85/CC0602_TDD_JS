@@ -29,4 +29,13 @@ Decorator.prototype.enough_paint_for_room = function(room) {
   }
 };
 
+Decorator.prototype.paint_room = function(room) {
+if (this.enough_paint_for_room(room) === true) {
+room.paint_room();
+}
+  else {
+    return "not enough paint"
+  };
+};
+
 module.exports = Decorator;
